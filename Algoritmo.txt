@@ -1,56 +1,33 @@
-1. Mostrar "Bienvenido a Boletos_Garrett.com"
-2. Hacer mientras inc1 diferente de 's' y x <= a 4
-	2.1 Mostrar mensaje para la elegir artista
-	2.2 Mostrar los artistas a elegir
-	2.3 Dar un entero corresspondiente a cada artista y almacenarla en opcionArtista
-	2.4 Si opcionArtista = 1
-		2.4.1 Hacer proceso para realizar las operaciones de la compra
-		2.4.2 Mostar "Deseas comprar mas boletos?"
-		2.4.3 Dar un caracter y almacenarlo en inc1
-		2.4.4 Si inc1 != 's'
-			2.4.4.1 Mostrar "Gracias por tu compra"
-		2.4.5 En caso contrario
-			2.4.5.1 Hacer x<--x+1
-	2.5 En caso contrario
-		2.5.1 Si opcionArtista = 2
-			2.5.1.1 Hacer proceso para realizar las operaciones de la compra
-			2.5.1.2 Mostar "Deseas comprar mas boletos?"
-			2.2.1.3 Dar un caracter y almacenarlo en inc1
-			2.5.1.4 Si inc1 != 's'
-				2.5.1.4.1 Mostrar "Gracias por tu compra"
-			2.5.1.5 En caso contrario
-				2.5.1.5.1 Hacer x<--x+1
-		2.5.2 En caso contrario
-			2.5.2.1 Si opcionArtista = 3
-				2.5.2.1.1 Hacer proceso para realizar las operaciones de la compra
-				2.5.2.1.2 Mostar "Deseas comprar mas boletos?"
-				2.5.2.1.3 Dar un caracter y almacenarlo en inc1
-				2.5.2.1.4 Si inc1 != 's'
-					2.5.2.1.4.1 Mostrar "Gracias por tu compra"
-				2.5.2.1.5 En caso contrario
-					2.5.2.1.5.1 Hacer x<--x+1
-			2.5.2.2 En caso contrario
-				2.5.2.2.1 Si opcionArtista = 4
-					2.5.2.2.1.1 Hacer proceso para realizar las operaciones de la compra
-					2.5.2.2.1.2 Mostar "Deseas comprar mas boletos?"
-					2.5.2.2.1.3 Dar un caracter y almacenarlo en inc1
-					2.5.2.2.1.4 Si inc1 != 's'
-						2.5.2.2.1.4.1 Mostrar "Gracias por tu compra"
-					2.5.2.2.1.5 En caso contrario
-						2.5.2.2.1.5.1 Hacer x<--x+1
-				2.5.2.2.2 En caso contrario
-					2.5.2.2.2.1 Si opcionArtista = 5
-						2.5.2.2.2.1.1 Hacer proceso para realizar las operaciones de la compra
-						2.5.2.2.2.1.2 Mostar "Deseas comprar mas boletos?"
-						2.5.2.2.2.1.3 Dar un caracter y almacenarlo en inc1
-						2.5.2.2.2.1.4 Si inc1 != 's'
-							2.5.2.2.2.1.4.1 Mostrar "Gracias por tu compra"
-						2.5.2.2.2.1.5 En caso contrario
-							2.5.2.2.2.1.5.1 Hacer x<--x+1
-					2.5.2.2.2.2 En caso contrario
-						2.5.2.2.2.2.1 Mostrar mensaje de opcion incorrecta
-						2.5.2.2.2.2.1 Dar un caracter y almacenarlo en inc1
-3.Si x <= 4
-	3.1 Mostrar mensaje por exedente de compras
-	3.2 Mostrar "Gracias por tu compra"
-4.Imprimir ticket
+1. Mostrar mensajes iniciales
+2. Dar el nombre de usuario y el saldo disponible y almacenarlos en usuario y saldo
+3. Hacer mientras inc1 diferente de 's' y x <= a 4
+	3.1 Mostrar menú para la elegir artista
+	3.2 Mostrar "Por favor selecciona un artista para tu próximo envento (puedes hacer sólo 5 compras distintas)"
+	3.3 Dar un entero corresspondiente a cada opcion y almacenarla en opcionArtista
+	3.4 Si opcionArtista = 1
+		3.4.1 Hacer proceso para realizar las operaciones de la compra
+	3.5 En caso contrario
+		3.5.1 Si opcionArtista = 2
+			3.5.1.1 Hacer proceso para realizar las operaciones de la compra
+		3.5.2 En caso contrario
+			3.5.2.1 Si opcionArtista = 3
+				3.5.2.1.1 Hacer proceso para realizar las operaciones de la compra
+			3.5.2.2 En caso contrario
+				3.5.2.2.1 Si opcionArtista = 4
+					3.5.2.2.1.1 Hacer proceso para realizar las operaciones de la compra
+				3.5.2.2.2 En caso contrario
+					3.5.2.2.2.1 Si opcionArtista = 5
+						3.5.2.2.2.1.1 Hacer proceso para realizar las operaciones de la compra
+					3.5.2.2.2.2 En caso contrario
+						3.5.2.2.2.2.1 Si opcionArtista = 6
+							3.5.2.2.2.2.1.1 Hacer proceso para salir del programa
+							3.5.2.2.2.2.1.2 in1 <-- 'n'
+					3.5.2.2.2.3 En caso contrario
+						3.5.2.2.2.3.1 Mostrar "Opcion incorrecta. Por favor presiona 's' para volver al menú pruncipal"
+						3.5.2.2.2.3.2 Dar un caracter y almacenarlo en inc1
+4.Si x > 4
+	4.1 Mostrar mensaje por exedente de compras
+	4.2 Imprimir ticket y en pantalla
+5.En caso contrario
+	5.1 Si tope != NULL
+		5.1.2 Imprimir ticket y en pantalla
