@@ -46,7 +46,7 @@ int main(){
 	printf("\t\t\t\t\tBienvenido a Boletos_Garrett.com\n\n");//Imprimimos nuevamente el mensaje inicial porque tambien lo borramos
 	printf("Ingresa tu nombre de usuario Boletos_Garrett ");
 	scanf("%s",&usuario);
-	printf("Ingresa el saldo con el que dispones para tus compras ");
+	printf("Ingresa el saldo con el que dispones para tus compras $");
 	scanf("%d",&saldo);
 	//Este ciclo repite el menu principal las veces que el usuario decida o en caso de que ingrese opcion invalida
 	do{
@@ -237,6 +237,7 @@ void imprimir(){
 	/*Imprime los datos de las compras desde el tope, por si el usuario no usó sus 5 compras y aún
 	no está llena la pila. Siguiendo el principio FILO, muestra primero la última compra realizada*/
 	for(x=*tope; x>=0; x--){
+		puts("\t\t\tDatos de la compra\n\n");//Imprimimos en pantalla
 		//Empezamos imprimiendo en el ticket
 		fprintf(ticket,"* %s",boletos[x].artista);
 		fprintf(ticket,"\n\nFecha: %d / %s / %d\n",boletos[x].f.dia,boletos[x].f.mes,boletos[x].f.anio);
@@ -244,11 +245,11 @@ void imprimir(){
 		fprintf(ticket,"Cant Precio\n");
 		fprintf(ticket,"%d    %d\n",boletos[x].numeroBoletos,boletos[x].precio);
 		fprintf(ticket,"Subtotal: %d\n\n",boletos[x].sub);
-		puts("\t\t\tDatos de la compra\n\n");//Iniciamos la impresión en pantalla
 		imprimirPantalla();//Invocamos a la función
 		pop();//Eliminamos los elementos de la pila
 	}
 	fprintf(ticket,"Total:  %d",total);//Al final imprime el total
+	printf("Total:  %d",total);//Al final imprime el total en pantalla
 	tope=NULL;//La pila está vacia
 }
 
@@ -260,7 +261,6 @@ void imprimirPantalla(){
 	printf("Cant Precio\n");
 	printf("%d    %d\n",boletos[x].numeroBoletos,boletos[x].precio);
 	printf("Subtotal: %d\n\n",boletos[x].sub);
-	printf("Total:  %d",total);//Al final imprime el total
 }
 
 //Hace la operación para quitar elementos de la pila
