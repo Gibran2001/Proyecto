@@ -23,7 +23,7 @@
 							3.5.2.2.2.2.1.1 Hacer proceso para salir del programa
 							3.5.2.2.2.2.1.2 Hacer in1 <-- 'n'
 					3.5.2.2.2.3 En caso contrario
-						3.5.2.2.2.3.1 Mostrar una cadena que diga "Opcion incorrecta. Por favor presiona 's' para volver al menú pruncipal"
+						3.5.2.2.2.3.1 Mostrar la cadena "Opcion incorrecta. Por favor presiona 's' para volver al menú"
 						3.5.2.2.2.3.2 Dar un caracter y almacenarlo en inc1
 4.Si x es mayor a 4
 	4.1 Mostrar mensaje por exedente de compras

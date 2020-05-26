@@ -117,7 +117,7 @@ int main(){
 				inc1='n';//Para que no se repita el ciclo
 				break;		
 			default://Si el usuario ingresa opcion incorrecta, sale el defecto para redireccionarlo al menu principal
-				printf("Opcion incorrecta. Por favor presiona 's' para volver al menú pruncipal ");
+				printf("Opcion incorrecta. Por favor presiona 's' para volver al menú ");
 				scanf("%c",&inc1);
 				inc1=tolower(inc1);
 				break;
