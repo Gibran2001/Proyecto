@@ -232,12 +232,12 @@ int procesoPrecio(){
 
 //Esta es la función que imprime los datos de la compra
 void imprimir(){
+	puts("\t\t\tDatos de la compra\n\n");//Imprimimos en pantalla
 	fprintf(ticket,"\t\t\tBoletos Garrett\n\n\n\n\n");
 	fprintf(ticket,"Usuario: %s\n",usuario);
 	/*Imprime los datos de las compras desde el tope, por si el usuario no usó sus 5 compras y aún
 	no está llena la pila. Siguiendo el principio FILO, muestra primero la última compra realizada*/
 	for(x=*tope; x>=0; x--){
-		puts("\t\t\tDatos de la compra\n\n");//Imprimimos en pantalla
 		//Empezamos imprimiendo en el ticket
 		fprintf(ticket,"* %s",boletos[x].artista);
 		fprintf(ticket,"\n\nFecha: %d / %s / %d\n",boletos[x].f.dia,boletos[x].f.mes,boletos[x].f.anio);
